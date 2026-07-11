@@ -5,235 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>67/ | ร้านแอคทวิตเตอร์</title>
   <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: linear-gradient(180deg, #fff7ee 0%, #ffeef7 55%, #effcff 100%);
-      color: #5b4636;
-    }
-    .page {
-      max-width: 460px;
-      margin: auto;
-      min-height: 100vh;
-      padding: 18px;
-    }
-    .topbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 18px;
-    }
-    .logo {
-      font-size: 26px;
-      font-weight: 900;
-      letter-spacing: .5px;
-    }
-    .pill {
-      border: 0;
-      background: #fff;
-      border-radius: 999px;
-      padding: 10px 14px;
-      box-shadow: 0 8px 24px rgba(146, 100, 80, .12);
-      color: #6b5140;
-      font-weight: 700;
-    }
-    .hero {
-      background: rgba(255,255,255,.75);
-      border: 2px solid #fff;
-      border-radius: 30px;
-      padding: 26px 20px;
-      box-shadow: 0 16px 40px rgba(187, 116, 137, .16);
-      text-align: center;
-    }
-    .hero h1 {
-      margin: 0 0 8px;
-      font-size: 28px;
-      line-height: 1.2;
-    }
-    .hero p {
-      margin: 0;
-      font-size: 15px;
-      color: #806756;
-    }
-    .banner {
-      margin: 16px 0;
-      background: #ffddea;
-      border-radius: 28px;
-      padding: 18px;
-      text-align: center;
-      border: 2px dashed #ffb8d2;
-      font-weight: 800;
-      color: #875068;
-    }
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      margin: 16px 0;
-    }
-    .stat, .menu-card, .product {
-      background: rgba(255,255,255,.82);
-      border-radius: 24px;
-      padding: 16px;
-      box-shadow: 0 12px 30px rgba(148, 103, 83, .12);
-      border: 1px solid rgba(255,255,255,.9);
-    }
-    .stat b {
-      display: block;
-      font-size: 22px;
-      margin-top: 6px;
-      color: #4f3b2f;
-    }
-    .menu {
-      display: grid;
-      gap: 10px;
-      margin-bottom: 16px;
-    }
-    .menu-card {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: 800;
-    }
-    .section-title {
-      margin: 18px 4px 10px;
-      font-size: 20px;
-      font-weight: 900;
-    }
-    .product {
-      text-align: center;
-      padding: 22px 18px;
-    }
-    .product-icon {
-      width: 86px;
-      height: 86px;
-      margin: 0 auto 12px;
-      border-radius: 26px;
-      background: #e8fbff;
-      display: grid;
-      place-items: center;
-      font-size: 42px;
-      border: 2px solid #ccf3fb;
-    }
-    .product h2 {
-      margin: 4px 0 8px;
-      font-size: 22px;
-    }
-    .price {
-      font-size: 34px;
-      font-weight: 900;
-      color: #e5689a;
-      margin: 8px 0;
-    }
-    .stock {
-      background: #eafff3;
-      color: #34885b;
-      border-radius: 999px;
-      padding: 8px 12px;
-      display: inline-block;
-      font-weight: 800;
-      margin-bottom: 14px;
-    }
-    .buy {
-      width: 100%;
-      border: 0;
-      border-radius: 18px;
-      background: linear-gradient(135deg, #ff9cc4, #ffc1d8);
-      color: #fff;
-      font-size: 17px;
-      font-weight: 900;
-      padding: 15px;
-      box-shadow: 0 12px 24px rgba(231, 93, 145, .25);
-    }
-    .footer {
-      text-align: center;
-      font-size: 13px;
-      color: #9b7c6c;
-      margin: 24px 0 10px;
-    }
+    *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:linear-gradient(180deg,#fff7ee 0%,#ffeef7 55%,#effcff 100%);color:#5b4636}button,.menu-card{font:inherit}.page{max-width:460px;margin:auto;min-height:100vh;padding:18px}.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.logo{font-size:26px;font-weight:900}.pill{border:0;background:#fff;border-radius:999px;padding:10px 14px;box-shadow:0 8px 24px rgba(146,100,80,.12);color:#6b5140;font-weight:700;cursor:pointer}.hero{background:rgba(255,255,255,.75);border:2px solid #fff;border-radius:30px;padding:26px 20px;box-shadow:0 16px 40px rgba(187,116,137,.16);text-align:center}.hero h1{margin:0 0 8px;font-size:28px}.hero p{margin:0;font-size:15px;color:#806756}.banner{margin:16px 0;background:#ffddea;border-radius:28px;padding:18px;text-align:center;border:2px dashed #ffb8d2;font-weight:800;color:#875068}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:16px 0}.stat,.menu-card,.product{background:rgba(255,255,255,.82);border-radius:24px;padding:16px;box-shadow:0 12px 30px rgba(148,103,83,.12);border:1px solid rgba(255,255,255,.9)}.stat b{display:block;font-size:22px;margin-top:6px;color:#4f3b2f}.menu{display:grid;gap:10px;margin-bottom:16px}.menu-card{display:flex;justify-content:space-between;align-items:center;font-weight:800;cursor:pointer;transition:.15s}.menu-card:active{transform:scale(.98)}.section-title{margin:18px 4px 10px;font-size:20px;font-weight:900}.product{text-align:center;padding:22px 18px}.product-icon{width:86px;height:86px;margin:0 auto 12px;border-radius:26px;background:#e8fbff;display:grid;place-items:center;font-size:42px;border:2px solid #ccf3fb}.product h2{margin:4px 0 8px;font-size:22px}.price{font-size:34px;font-weight:900;color:#e5689a;margin:8px 0}.stock{background:#eafff3;color:#34885b;border-radius:999px;padding:8px 12px;display:inline-block;font-weight:800;margin-bottom:14px}.buy{width:100%;border:0;border-radius:18px;background:linear-gradient(135deg,#ff9cc4,#ffc1d8);color:#fff;font-size:17px;font-weight:900;padding:15px;box-shadow:0 12px 24px rgba(231,93,145,.25);cursor:pointer}.footer{text-align:center;font-size:13px;color:#9b7c6c;margin:24px 0 10px}.modal{position:fixed;inset:0;background:rgba(78,53,60,.42);display:none;align-items:center;justify-content:center;padding:20px;z-index:999;backdrop-filter:blur(5px)}.modal.show{display:flex}.modal-box{width:100%;max-width:360px;max-height:88vh;overflow-y:auto;background:#fffafc;border:2px solid #fff;border-radius:30px;padding:24px;position:relative;box-shadow:0 25px 65px rgba(109,59,78,.28);animation:modalPop .2s ease}.modal-close{position:absolute;top:14px;right:14px;width:36px;height:36px;border:0;border-radius:50%;background:#ffe3ef;color:#83546a;font-size:24px;cursor:pointer}.modal-icon{font-size:44px;text-align:center}.modal-box h2{text-align:center;margin:8px 0 6px;font-size:24px}.modal-subtitle{text-align:center;color:#8a6d77;margin:0 0 18px;font-size:14px}.modal-step{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #ffe7f0;border-radius:18px;padding:12px;margin-bottom:10px}.modal-step span{min-width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:#ffd8e8;color:#764c60;font-weight:900}.modal-step p{margin:0}.modal-note{background:#fff;border:1px solid #ffe7f0;border-radius:18px;padding:14px;line-height:1.6;margin-bottom:10px}.modal-note strong{display:block;margin-bottom:4px}.modal-ok{width:100%;margin-top:10px;border:0;border-radius:17px;padding:14px;background:linear-gradient(135deg,#ff9fc3,#ffc3d9);color:#fff;font-weight:900;font-size:16px;cursor:pointer}@keyframes modalPop{from{opacity:0;transform:translateY(12px) scale(.94)}to{opacity:1;transform:translateY(0) scale(1)}}
   </style>
 </head>
 <body>
   <main class="page">
-    <header class="topbar">
-      <div class="logo">67/ 🧸</div>
-      <button class="pill">เข้าสู่ระบบ</button>
-    </header>
-
-    <section class="hero">
-      <h1>ยินดีต้อนรับสู่ 67/ 🌷</h1>
-      <p>ร้านแอค Twitter พร้อมส่ง ราคาน่ารัก ใช้งานง่าย</p>
-    </section>
-
-    <section class="banner">
-      ☁️ แอคทวิตเตอร์พร้อมส่ง ราคาเดียว 30 บาท ✨
-    </section>
-
-    <section class="stats">
-      <div class="stat">🎀 สินค้า<b>1</b></div>
-      <div class="stat">🛒 สต็อก<b>20</b></div>
-      <div class="stat">💗 ราคา<b>฿30</b></div>
-      <div class="stat">⚡ สถานะ<b>พร้อม</b></div>
-    </section>
-
+    <header class="topbar"><div class="logo">67/ 🧸</div><button class="pill" onclick="openModal('loginModal')">เข้าสู่ระบบ</button></header>
+    <section class="hero"><h1>ยินดีต้อนรับสู่ 67/ 🌷</h1><p>ร้านแอค Twitter พร้อมส่ง ราคาน่ารัก ใช้งานง่าย</p></section>
+    <section class="banner">☁️ แอคทวิตเตอร์พร้อมส่ง ราคาเดียว 30 บาท ✨</section>
+    <section class="stats"><div class="stat">🎀 สินค้า<b>1</b></div><div class="stat">🛒 สต็อก<b>20</b></div><div class="stat">💗 ราคา<b>฿30</b></div><div class="stat">⚡ สถานะ<b>พร้อม</b></div></section>
     <section class="menu">
-      <div class="menu-card" onclick="alert('วิธีสั่งซื้อ 🌸\n1. กดซื้อสินค้า\n2. ติดต่อแอดมิน\n3. โอนเงิน 30 บาท\n4. รับแอค Twitter')">🌸 วิธีสั่งซื้อ <span>›</span></div>
-     <div class="menu-card" onclick="alert('กฎการประกัน 🛡️\nรับประกันเฉพาะแอคที่เข้าไม่ได้หลังซื้อ\nต้องแจ้งปัญหาทันทีหลังได้รับสินค้า')">🛡️ กฎการประกัน <span>›</span></div>
-      <div class="menu-card">💌 แจ้งปัญหา <span>›</span></div>
+      <div class="menu-card" onclick="openModal('howToModal')">🌸 วิธีสั่งซื้อ <span>›</span></div>
+      <div class="menu-card" onclick="openModal('warrantyModal')">🛡️ กฎการประกัน <span>›</span></div>
+      <div class="menu-card" onclick="openModal('problemModal')">💌 แจ้งปัญหา <span>›</span></div>
     </section>
-
     <div class="section-title">สินค้าแนะนำ</div>
-
-    <section class="product">
-      <div class="product-icon">🐦</div>
-      <h2>แอค Twitter พร้อมส่ง</h2>
-      <div class="price">฿30.00</div>
-      <div class="stock">เหลือ 20 แอคเคาท์</div>
-     <button class="buy" onclick="alert('สั่งซื้อแอค Twitter 🐦\nราคา 30 บาท\nกรุณาติดต่อแอดมิน 💗')">ซื้อสินค้า 🛒</button>
-    </section>
-
+    <section class="product"><div class="product-icon">🐦</div><h2>แอค Twitter พร้อมส่ง</h2><div class="price">฿30.00</div><div class="stock">เหลือ 20 แอคเคาท์</div><button class="buy" onclick="openModal('buyModal')">ซื้อสินค้า 🛒</button></section>
     <footer class="footer">© 2026 67/ — Cute Minimal Shop</footer>
   </main>
-<div class="modal" id="orderModal">
-  <div class="modal-box">
-    <button class="modal-close" onclick="closeModal()">×</button>
 
-    <div class="modal-icon">🌸</div>
-    <h2>วิธีสั่งซื้อ</h2>
+  <div class="modal" id="howToModal" onclick="closeOutside(event,'howToModal')"><div class="modal-box"><button class="modal-close" onclick="closeModal('howToModal')">×</button><div class="modal-icon">🌸</div><h2>วิธีสั่งซื้อ</h2><p class="modal-subtitle">ทำตามขั้นตอนง่าย ๆ ได้เลย</p><div class="modal-step"><span>1</span><p>กดปุ่มซื้อสินค้า</p></div><div class="modal-step"><span>2</span><p>ติดต่อแอดมินเพื่อยืนยันรายการ</p></div><div class="modal-step"><span>3</span><p>ชำระเงินจำนวน 30 บาท</p></div><div class="modal-step"><span>4</span><p>รับข้อมูลแอค Twitter</p></div><button class="modal-ok" onclick="closeModal('howToModal')">เข้าใจแล้ว 💗</button></div></div>
 
-    <div class="modal-step">
-      <span>1</span>
-      <p>กดปุ่มซื้อสินค้า</p>
-    </div>
+  <div class="modal" id="warrantyModal" onclick="closeOutside(event,'warrantyModal')"><div class="modal-box"><button class="modal-close" onclick="closeModal('warrantyModal')">×</button><div class="modal-icon">🛡️</div><h2>กฎการประกัน</h2><p class="modal-subtitle">กรุณาอ่านก่อนสั่งซื้อ</p><div class="modal-note"><strong>1. ตรวจสอบทันที</strong>กรุณาลองเข้าสู่ระบบทันทีหลังได้รับสินค้า</div><div class="modal-note"><strong>2. แจ้งปัญหาเร็วที่สุด</strong>หากเข้าใช้งานไม่ได้ ให้แจ้งร้านพร้อมหลักฐาน</div><div class="modal-note"><strong>3. ไม่รับประกันหลังแก้ข้อมูล</strong>หากเปลี่ยนรหัสหรือข้อมูลแล้ว ร้านอาจตรวจสอบไม่ได้</div><button class="modal-ok" onclick="closeModal('warrantyModal')">รับทราบแล้ว ✨</button></div></div>
 
-    <div class="modal-step">
-      <span>2</span>
-      <p>ติดต่อแอดมิน</p>
-    </div>
+  <div class="modal" id="problemModal" onclick="closeOutside(event,'problemModal')"><div class="modal-box"><button class="modal-close" onclick="closeModal('problemModal')">×</button><div class="modal-icon">💌</div><h2>แจ้งปัญหา</h2><p class="modal-subtitle">ช่องทางติดต่อจะเพิ่มภายหลัง</p><div class="modal-note">กรุณาเตรียมข้อมูลรายการสั่งซื้อ และภาพหน้าจอปัญหาไว้ก่อนติดต่อแอดมิน</div><button class="modal-ok" onclick="closeModal('problemModal')">ตกลง</button></div></div>
 
-    <div class="modal-step">
-      <span>3</span>
-      <p>ชำระเงิน 30 บาท</p>
-    </div>
+  <div class="modal" id="buyModal" onclick="closeOutside(event,'buyModal')"><div class="modal-box"><button class="modal-close" onclick="closeModal('buyModal')">×</button><div class="modal-icon">🛒</div><h2>สั่งซื้อสินค้า</h2><p class="modal-subtitle">แอค Twitter พร้อมส่ง</p><div class="modal-note"><strong>ราคา</strong>30 บาท</div><div class="modal-note"><strong>จำนวนคงเหลือ</strong>20 แอคเคาท์</div><div class="modal-note">ระบบสั่งซื้อกำลังจัดทำ สามารถเพิ่มช่องทางติดต่อหรือชำระเงินภายหลังได้</div><button class="modal-ok" onclick="closeModal('buyModal')">ปิดหน้าต่าง 💗</button></div></div>
 
-    <div class="modal-step">
-      <span>4</span>
-      <p>รับแอค Twitter</p>
-    </div>
+  <div class="modal" id="loginModal" onclick="closeOutside(event,'loginModal')"><div class="modal-box"><button class="modal-close" onclick="closeModal('loginModal')">×</button><div class="modal-icon">🧸</div><h2>เข้าสู่ระบบ</h2><p class="modal-subtitle">ระบบสมาชิกกำลังจัดทำ</p><div class="modal-note">ตอนนี้ยังไม่เปิดใช้งานระบบเข้าสู่ระบบ</div><button class="modal-ok" onclick="closeModal('loginModal')">ตกลง</button></div></div>
 
-    <button class="modal-ok" onclick="closeModal()">เข้าใจแล้ว 💗</button>
-  </div>
-</div>
-
-<script>
-  function openModal() {
-    document.getElementById("orderModal").classList.add("show");
-  }
-
-  function closeModal() {
-    document.getElementById("orderModal").classList.remove("show");
-  }
-</script>
+  <script>
+    function openModal(id){document.getElementById(id).classList.add('show');document.body.style.overflow='hidden'}
+    function closeModal(id){document.getElementById(id).classList.remove('show');document.body.style.overflow=''}
+    function closeOutside(event,id){if(event.target.id===id)closeModal(id)}
+    document.addEventListener('keydown',function(event){if(event.key==='Escape'){document.querySelectorAll('.modal.show').forEach(function(modal){modal.classList.remove('show')});document.body.style.overflow=''}})
+  </script>
 </body>
 </html>
